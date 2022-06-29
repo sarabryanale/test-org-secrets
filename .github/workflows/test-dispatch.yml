@@ -1,0 +1,11 @@
+name: test-dispatch
+
+on: workflow_dispatch
+
+jobs:
+  build-info-job:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Build info
+        run: |
+          echo "Dispatch workflow"
